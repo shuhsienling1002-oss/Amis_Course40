@@ -73,7 +73,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- 2. 資料庫 (Unit 40: 18個單字 - 朋友與社交) ---
+# --- 2. 資料庫 (Unit 40: 18個單字 - User Fix) ---
 vocab_data = [
     {"amis": "Widang", "chi": "朋友", "icon": "🧑‍🤝‍🧑", "source": "Row 6", "morph": "Noun"},
     {"amis": "Malawidang", "chi": "成為朋友", "icon": "🤝", "source": "Row 210", "morph": "Mala-Widang"},
@@ -88,7 +88,7 @@ vocab_data = [
     {"amis": "Palafang", "chi": "做客 / 拜訪", "icon": "☕", "source": "Row 992", "morph": "Pa-Lafang"},
     {"amis": "Licay", "chi": "問候 (詞根)", "icon": "❓", "source": "Row 209", "morph": "Root"},
     {"amis": "Milicay", "chi": "問候 / 詢問", "icon": "🙋", "source": "Row 209", "morph": "Mi-Licay"},
-    {"amis": "Pa'icela", "chi": "加油 / 鼓勵", "icon": "💪", "source": "Row 326", "morph": "Pa-'Icel-a"},
+    {"amis": "Pa'icelen", "chi": "加油 / 鼓勵", "icon": "💪", "source": "User Fix", "morph": "Pa-'Icel-en"}, # 修正
     {"amis": "Kasasowal", "chi": "交談 / 討論", "icon": "🗣️", "source": "Row 402", "morph": "Ka-Sa-Sowal"},
     {"amis": "Padang", "chi": "幫忙 (詞根)", "icon": "🆘", "source": "Row 384", "morph": "Root"},
     {"amis": "Mipadang", "chi": "幫忙 (主動)", "icon": "🤲", "source": "Row 384", "morph": "Mi-Padang"},
@@ -105,7 +105,7 @@ sentences = [
     {"amis": "Mipadang ci ina to tayal no loma'.", "chi": "媽媽幫忙家務。", "icon": "🧹", "source": "Row 384"},
     {"amis": "Masasowal ko mato'asay.", "chi": "老人互相聊天。", "icon": "🗣️", "source": "Row 402"},
     {"amis": "Malacafay a minokay.", "chi": "結伴回家。", "icon": "🏠", "source": "Standard Pattern"},
-    {"amis": "Pa'icelen ko wawa a mitilid.", "chi": "要鼓勵孩子讀書。", "icon": "📚", "source": "Adapted from Row 326"},
+    {"amis": "Pa'icelen ko wawa a mitilid.", "chi": "要鼓勵孩子讀書。", "icon": "📚", "source": "User Fix"}, # 修正
 ]
 
 # --- 3. 隨機題庫 (5題) ---
@@ -132,11 +132,11 @@ raw_quiz_pool = [
         "hint": "Mi- (做) + Licay (問候)"
     },
     {
-        "q": "單字測驗：Malawidang",
-        "audio": "Malawidang",
-        "options": ["成為朋友", "成為敵人", "成為鄰居"],
-        "ans": "成為朋友",
-        "hint": "Mala- (成為) + Widang (朋友)"
+        "q": "單字測驗：Pa'icelen",
+        "audio": "Pa'icelen",
+        "options": ["加油/鼓勵", "責罵", "放棄"],
+        "ans": "加油/鼓勵",
+        "hint": "User Fix: Pa'icelen"
     },
     {
         "q": "Miliso' to malitengay.",
@@ -167,7 +167,7 @@ if 'init' not in st.session_state:
 
 # --- 5. 主介面 ---
 st.markdown("<h1 style='text-align: center; color: #E65100;'>Unit 40: O Widang</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #666;'>朋友與社交 (Social & Interaction)</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #666;'>朋友與社交 (User Corrected)</p>", unsafe_allow_html=True)
 
 tab1, tab2 = st.tabs(["📚 詞彙與句型", "🎲 隨機挑戰"])
 
