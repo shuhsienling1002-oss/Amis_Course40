@@ -98,7 +98,7 @@ vocab_data = [
 # --- 句子庫 (9句: 嚴格源自 CSV 並移除連字號) ---
 sentences = [
     {"amis": "Malalitemoh kita i lalan.", "chi": "我們在路上相遇。", "icon": "🛤️", "source": "Row 683"},
-    {"amis": "Tala-cowa ko widang no miso?", "chi": "你的朋友去哪裡？", "icon": "🗺️", "source": "Row 6"},
+    {"amis": "Talacowa ko widang no miso?", "chi": "你的朋友去哪裡？", "icon": "🗺️", "source": "Row 6"},
     {"amis": "Malicay ni ina no miso ko widang no mako.", "chi": "我的朋友被妳的媽媽詢問(問候)。", "icon": "🙋", "source": "Row 209"},
     {"amis": "Takaraw kora a kapot.", "chi": "那位同伴很高。", "icon": "📏", "source": "Row 19"},
     {"amis": "Miliso' to malitengay.", "chi": "探望老人。", "icon": "👴", "source": "Row 3535"},
@@ -257,3 +257,4 @@ with tab2:
             
             st.session_state.quiz_questions = final_qs
             safe_rerun()
+
